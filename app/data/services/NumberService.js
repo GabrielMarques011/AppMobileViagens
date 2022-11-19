@@ -1,7 +1,7 @@
 export const NumberService = {
 
     currency(value){
-        Intl.NumberFormat('pt-BR', {
+       const formatter = new Intl.NumberFormat('pt-BR', {
             style: 'currency',
             currency: 'BRL'
         })

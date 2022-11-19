@@ -14,7 +14,7 @@ const theme ={
     ...DefaultTheme,
     colors:{
         ...DefaultTheme.colors,
-        primary: "black"
+        primary: "#402218"
     }
 
 }
@@ -22,21 +22,24 @@ const theme ={
 export default function Main(){
 
     // cria uma variável const chamada value que usa o useState, e essa variável começa com o valor 1
-    const [value, setValue] = useState(1)
+    /* const [value, setValue] = useState(1)
 
     useEffect(()=> {
 
         setTimeout(()=>{
             setValue(2) // seta o valor 2 na variável value, utilizando o setValue
         }, 3000)
-    })
+    }) */
 
     return(
         <PaperProvider theme={theme}>
+            <ProductProvider>
             <CartProvider>
                 <App/>
             </CartProvider>
+            </ProductProvider>
         </PaperProvider>
+        
     )
 
 }

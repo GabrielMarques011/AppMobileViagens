@@ -1,4 +1,4 @@
-const api = 'http://10.92.198.32:3002/api/apppedidos/'
+const api = 'http://10.92.198.15:3002/api/apppedidos/'
 
 
 export const ApiService ={

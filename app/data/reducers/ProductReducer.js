@@ -17,7 +17,8 @@ export const ProductReducer = (store = initialState, action) =>{
         case PRODUCTS_SELECT:
 
             return {...store, selectedProduct: action.value}
-
+            
+        default: return store;
     }
 
 }
